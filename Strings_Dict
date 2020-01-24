@@ -1,0 +1,29 @@
+
+# replace non digit and decimals in column
+df['sales'].replace(r'[^0-9.]', '', regex=True)
+
+# remove list of characters 
+#OF, BANK, CREDIT UNION, CU,FCU, NATIONAL ASSOCIATION, CREDIT CARD, 
+vals_to_replace = {'OF':'', 'STATE':'', 'High':''}
+df['a'] = df['a'].map(vals_to_replace)
+
+# meaning of [:] , can be apply to list
+del arr[:]  # Deletes all the elements in the array
+
+# Insert the correct syntax to add a placeholder for the age parameter.
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age))
+
+
+# another way
+l = ['\d+', '[^\x00-\x80]+', 'ounces', 'ounce', 'tablespoons', 
+     'tablespoon', 'teaspoons', 'teaspoon', 'cup', 'cups']
+df.ingredient.str.replace('|'.join(l), '', regex=True).str.strip()
+
+# reverse / invert the dictionary mapping
+# replace key with value and value by key
+my_map = {'a': 1, 'b': 2}
+inv_map = {v: k for k, v in my_map.items()}
+inv_map1 ={my_map[i]: i for i in my_map}
+
