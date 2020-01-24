@@ -1,0 +1,87 @@
+# Python
+
+# Packages or libraries installation
+- conda install spacy
+- pip install spacy
+- conda install -c conda-forge spacy
+
+# install
+conda install -c conda-forge python-levenshtein
+
+
+# import csv file using pandas
+csv_att = pd.read_csv("D:\FC_docs\FI Marketshare match\CSV_ATTRIBUTES_ACTIVE.csv", low_memory=False)
+
+# type of dataset , dataset type
+type(csv_att)
+
+# convert data in to pandas dataframe
+pd.DataFrame(df)
+
+# Descriptive stats , summary
+df.describe(include='all')
+df.describe().transpose()
+
+import pandas_profiling
+pandas_profiling.ProfileReport(df)
+
+
+# replace non digit and decimals in column
+df['sales'].replace(r'[^0-9.]', '', regex=True)
+
+# remove list of characters 
+#OF, BANK, CREDIT UNION, CU,FCU, NATIONAL ASSOCIATION, CREDIT CARD, 
+vals_to_replace = {'OF':'', 'STATE':'', 'High':''}
+df['a'] = df['a'].map(vals_to_replace)
+
+# meaning of [:] , can be apply to list
+del arr[:]  # Deletes all the elements in the array
+
+# Insert the correct syntax to add a placeholder for the age parameter.
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age))
+
+
+# another way
+l = ['\d+', '[^\x00-\x80]+', 'ounces', 'ounce', 'tablespoons', 
+     'tablespoon', 'teaspoons', 'teaspoon', 'cup', 'cups']
+df.ingredient.str.replace('|'.join(l), '', regex=True).str.strip()
+
+
+# Need to apply the same mapping to multiple columns at once? Use "applymap"
+
+# to know the count of missing 
+df.isna().sum().sum() 	   - total missing count in the data
+df.isna().sum()		   - total missing count by variable
+
+# find out rows which is missing in dataframe
+null_data = df[df.isnull().any(axis=1)]
+
+
+# to split items in row as to create one row for each item 
+df.explode("col_having_listdata")
+
+# Want to combine the small categories in a Series (<10% frequency) into a single category?
+1. Save the normalized value counts
+2. Filter by frequency & save the index
+3. Replace small categories with "Other" 
+
+
+# Are you scraping webpage using read.html() but it returns too many tables..?
+Use the 'match' parameter to find table that contains particular string 
+
+# Three useful ways to convert one set of values to another:
+1. map() using a dictionary
+2. factorize() to encode each value as an integer
+3. comparison statement to return boolean values
+
+# remove Unnamed: 0 , extra column , unwanted
+pd.read_csv('file.csv', index_col=0)
+
+
+# without loop apply transformations to every item (sentence) using built in map function
+cleaned = list( map(fun_name, text_data))
+cleaned
+
+
