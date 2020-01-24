@@ -1,0 +1,5 @@
+## Interview questions
+- You have two dataframes df1 and df2, both contains city data
+  you have to select subset of df2 based on the city name of row we picked up from df1
+ iterative
+
