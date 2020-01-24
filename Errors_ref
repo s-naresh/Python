@@ -1,0 +1,14 @@
+
+# errors
+- ERROR: Could not install packages due to an EnvironmentError: [WinError 5] Access is denied: 'c:\\programdata\\anaconda3\\lib\\site-packages\\importlib_metadata-0.17.dist-info\\INSTALLER'
+Consider using the `--user` option or check the permissions.
+
+- EnvironmentNotWritableError: The current user does not have write permissions to the target environment.
+  environment location: C:\ProgramData\Anaconda3
+  
+# MemoryError: Unable to allocate array with shape (6861060096,) and data type int32
+- There is a formula for calculating the correct pagefile size. Initial size is 
+one and a half (1.5) x the amount of total system memory. Maximum size is three (3) x the initial size. 
+So let's say you have 4 GB (1 GB = 1,024 MB x 4 = 4,096 MB) of memory. 
+The initial size would be 1.5 x 4,096 = 6,144 MB and the maximum size would be 3 x 6,144 = 18,432 MB.
+
