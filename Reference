@@ -25,6 +25,8 @@ df.describe().transpose()
 import pandas_profiling
 pandas_profiling.ProfileReport(df)
 
+# delete row \ remove row containing numeric values in strings from pandas dataframe
+df[~df.text.str.contains(r'[0-9]')]
 
 # replace non digit and decimals in column
 df['sales'].replace(r'[^0-9.]', '', regex=True)
