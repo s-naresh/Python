@@ -34,4 +34,5 @@ C:\Users\name\AppData\Local\Continuum\anaconda3\Lib\site-packages\en_core_web_sm
 
 PS: Check for spacy version
 
-## 
+## TypeError: object of type 'float' has no len()
+
