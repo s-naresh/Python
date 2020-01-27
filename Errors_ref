@@ -12,3 +12,11 @@ one and a half (1.5) x the amount of total system memory. Maximum size is three 
 So let's say you have 4 GB (1 GB = 1,024 MB x 4 = 4,096 MB) of memory. 
 The initial size would be 1.5 x 4,096 = 6,144 MB and the maximum size would be 3 x 6,144 = 18,432 MB.
 
+## error , NLP , spacy 
+- package = spacy
+- command = nlp = spacy.load("en_core_web_lg")
+- error = OSError: [E050] Can't find model 'en_core_web_lg'. It doesn't seem to be a shortcut link, a Python package or a valid path to a data directory.
+=> you could do python -m spacy download en_core_web_lg and then python -m spacy link en_core_web_lg en. 
+That would make en a name for en_core_web_lg, which is a large spaCy model for the English language.
+
+## 
