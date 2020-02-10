@@ -1,5 +1,10 @@
 # Python
 
+# Links for reference - 
+- banking transactions data for exploratory analysis - Dataset from PKDD'99 Discovery Challenge:
+https://github.com/justinng1/berka/blob/master/exploration.ipynb
+
+
 # Packages or libraries installation
 - conda install spacy
 - pip install spacy
