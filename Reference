@@ -92,3 +92,13 @@ cleaned = list( map(fun_name, text_data))
 cleaned
 
 
+
+## Libararies use
+# requests 
+     - Requests is used to retrive and load the data from API server (API is a server that you can use to retrieve and send data to using code.)
+     - requests.get("url") used to get the information
+     - JSON is a way to encode data structures that ensures that they are easily readable by machines. 
+     - json.dumps() =  Takes Python object, and converts (dumps) it to a string
+     - json.load() = Takes JSON string, and converts(loads) it to a python object
+     - params = used to send parameters(optional) 
+     
