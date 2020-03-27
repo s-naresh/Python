@@ -103,6 +103,26 @@ sorted([(x, sys.getsizeof(globals().get(x))) for x in dir() if not x.startswith(
 # lambda function
 	lambda <args> : <return Value> if <condition > ( <return value > if <condition> else <return value>)
 
+# Save model, load model, use for predict.
+# Pickle is one method to save models and later use it for prediction. It is used for serializing 
+and de-serializing a Python object structure. Any object in python can be pickled so that it can be saved on disk.
+# import KNeighborsClassifier model 
+from sklearn.neighbors import KNeighborsClassifier as KNN 
+knn = KNN(n_neighbors = 3) 
+# train model 
+knn.fit(X_train, y_train) 
+import pickle
+# Save the trained model as a pickle string.
+save_classifier = open("knn.pickle","wb")
+pickle.dump(knn, save_classifier)
+save_classifier.close()
+# Load the pickled model
+classifier_f = open("knn.pickle", "rb")
+classifier = pickle.load(classifier_f)
+classifier_f.close()
+# Use the loaded pickled model to make predictions
+classifier.predict(X_test)
+
 
 ## Libararies use
 # requests 
