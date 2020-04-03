@@ -1,5 +1,83 @@
 # Python
 
+durgasoft for hadoop
+
+# C:\Users\nshirsat\AppData\Local\Programs\Python\Python36\Scripts
+# path of python interpreter   C:\Users\nshirsat\AppData\Local\Programs\Python\Python36			
+  
+  
+-- pip path
+C:\Users\nshirsat\AppData\Local\Continuum\Anaconda3\Scripts
+
+# %LocalAppData%\Programs - paste in windows search
+
+# EDA - pandas_profiling
+http://nbviewer.jupyter.org/github/JosPolfliet/pandas-profiling/blob/master/examples/meteorites.ipynb
+
+# comparison R vs Python (pandas)
+https://pandas.pydata.org/pandas-docs/stable/comparison_with_r.html
+
+# fast ai - http://www.fast.ai/2018/09/26/ml-launch/
+
+# Python - ML and Mathematics all in one place (Homemade Machine Learning)
+https://github.com/trekhleb/homemade-machine-learning
+
+# python learning video like sentdex
+http://coreyms.com/
+
+# Bayesian LR in python
+https://github.com/WillKoehrsen/Data-Analysis/blob/master/bayesian_lr/Bayesian%20Linear%20Regression%20Project.ipynb
+
+# dan bader
+# Oython a to z
+https://www.kaggle.com/dark4user/python-programming-from-a-to-z
+
+
+
+
+## library / packages in python
+- NLTK = used for Natural language proecessing, sentiment analysis
+- requests and BeautifulSoup - used to scrape reviews from websites
+- Scikit-learn = is a free software machine learning library for the Python
+- Mlpy = is a Python machine learning library built on top of NumPy/SciPy, the GNU Scientific Library.
+- Numpy = Mathematical operations , make easy to work with large multidimensional arrays and matrices
+- Scipy = SciPy has modules for optimization, linear algebra, integration ,  N-dimensional array manipulation.
+- Matplotlib = is a Python module for visualization, graphs
+- Python = Used for data manupulation, contains high-level data structures and tools designed for fast and easy data analysis operations.
+- Theano = used for numerical computation, and is similar to Numpy. Some libraries such as Pylearn2 use Theano as their core component 
+          for mathematical computation. Theano allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.
+- Statsmodels = is a Python module that allows users to explore data, estimate statistical models, 
+              and perform statistical tests. An extensive list of descriptive statistics, statistical tests, 
+			  plotting functions, and result statistics are available for different types of data and each estimator.
+			  Time series forecasting
+- PyFlux 	= time series forecasting 
+- PyBrain = is an acronym for “Python-Based Reinforcement Learning, Artificial Intelligence, and Neural Network”. 
+			It is an open source library mainly used for neural networks, reinforcement learning and unsupervised learning.
+- Gensim = is a Python library for topic modeling. It is built on Numpy and Scipy.
+- Keras = is an open-source library for building Neural Networks at a high-level of the interface 
+- Tensorflow = Used to develop deep learning Network 
+
+- Caffe = very useful machine learning library when used for computer vision.
+- SHAP (SHapely Additive exPlanation)  = shap used to explain the influence of each feature on model.
+
+- Catboost / XGBoost - gradient boosting
+
+- Facets = Data visualization 
+(When visualizing a large amount of data in Dive in a Juypter notebook, as is done in the Dive demo Jupyter notebook, you will need to start the notebook server with an increased IOPub data rate. This can be done with the command jupyter notebook --NotebookApp.iopub_data_rate_limit=10000000)
+
+# NLP packages
+- Flashtext
+- textstat
+- fuzzywuzzy
+- pyLDAvis
+- spacy
+- textblob
+
+# Productinization of models 
+- Papermill is an nteract library built for configurable and reliable execution of notebooks with production ecosystems in mind. What Papermill does is rather simple. It take a notebook path and some parameter inputs, then executes the requested notebook with the rendered input. As each cell executes, it saves the resulting artifact to an isolated output notebook.
+
+- Reuter_50_50 Data set
+
 # Links for reference - 
 - banking transactions data for exploratory analysis - Dataset from PKDD'99 Discovery Challenge:
 https://github.com/justinng1/berka/blob/master/exploration.ipynb
@@ -103,6 +181,7 @@ sorted([(x, sys.getsizeof(globals().get(x))) for x in dir() if not x.startswith(
 # lambda function
 	lambda <args> : <return Value> if <condition > ( <return value > if <condition> else <return value>)
 
+
 # Save model, load model, use for predict.
 # Pickle is one method to save models and later use it for prediction. It is used for serializing 
 and de-serializing a Python object structure. Any object in python can be pickled so that it can be saved on disk.
@@ -122,6 +201,31 @@ classifier = pickle.load(classifier_f)
 classifier_f.close()
 # Use the loaded pickled model to make predictions
 classifier.predict(X_test)
+
+
+# For writing tuple for a single value, you need to include a comma, even though there is a single value. Also at the end you need to write semi-coma as shown below.
+# Python has tuple assignment feature which enables you to assign more than one variable at a time. 
+# Use {} and .format(var name) to use predefined variable in python comment
+
+-- Advantages of tuple over list
+# Iterating through tuple is faster than with list, since tuples are immutable.
+# Tuples that consist of immutable elements can be used as key for dictionary, which is not possible with list
+# If you have data that is immutable, implementing it as tuple will guarantee that it remains write-protected
+
+-- Dictionaries in a programming language is a type of data-structure used to store information connected in someway. 
+Python Dictionary are defined into two elements Keys and Values. Dictionaries do not store their information in any particular order, 
+so you may not get your information back in the same order you entered it.
+
+-- Use 'in' or 'not in'operator with if else to find out if particular element present in the system or not 
+# Use the "in" operator in code with if statement to check the value of x existing in the list and print the result accordingly
+# Use the "not in" operator in code with if statement to check the value of y exist in the list and print the result accordingly
+# Operator is: It returns true if two variables point the same object and false otherwise
+# Operator is not: It returns false if two variables point the same object and true otherwise
+
+
+-- Python Questions 
+# What is use of "!" in expression print(id + "!")
+# if __name__ == '__main__':
 
 
 ## Libararies use
