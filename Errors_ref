@@ -12,6 +12,13 @@ one and a half (1.5) x the amount of total system memory. Maximum size is three 
 So let's say you have 4 GB (1 GB = 1,024 MB x 4 = 4,096 MB) of memory. 
 The initial size would be 1.5 x 4,096 = 6,144 MB and the maximum size would be 3 x 6,144 = 18,432 MB.
 
+# error related to package / modules installation
+# Could not install packages due to an EnvironmentError: [WinError 5] Access is denied:
+=> pip3 install --upgrade tensorflow-gpu --user
+  (https://stackoverflow.com/questions/51912999/could-not-install-packages-due-to-an-environmenterror-winerror-5-access-is-de)
+  
+
+
 ## error , NLP , spacy 
 - package = spacy
 - command = nlp = spacy.load("en_core_web_lg")
@@ -35,4 +42,5 @@ C:\Users\name\AppData\Local\Continuum\anaconda3\Lib\site-packages\en_core_web_sm
 PS: Check for spacy version
 
 ## TypeError: object of type 'float' has no len()
+
 
